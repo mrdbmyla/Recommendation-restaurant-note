@@ -1,0 +1,8 @@
+streamlit
+pandas
+scikit-learn
+joblib
+streamlit-navigation-bar
+requests
+folium
+streamlit-folium
