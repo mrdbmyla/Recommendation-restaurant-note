@@ -9,6 +9,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
 import warnings
 from streamlit_navigation_bar import st_navbar
+from pathlib import Path
 
 st.set_page_config(page_title="Prédiction de note restaurant", layout="wide",initial_sidebar_state="collapsed")
 st.sidebar.caption("Sélectionnez une page")
@@ -40,9 +41,12 @@ def format_func2(option):
     
 
 ######################################## MACHINE LEARNING ########################################
-model = joblib.load("mon_modele.pkl")
 
-df = pd.read_csv("P3_ML3v6.csv")
+BASE_DIR = Path(__file__).resolve().parent  # dossier où se trouve 1_Prediction.py
+
+model = joblib.load(BASE_DIR / "mon_modele.pkl")
+
+df = pd.read_csv(BASE_DIR / "P3_ML3v6.csv")
 
 df_num = df.select_dtypes(include='number')
 
