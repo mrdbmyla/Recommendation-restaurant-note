@@ -3,6 +3,7 @@ import pandas as pd
 import requests
 import folium
 from streamlit_folium import st_folium
+from pathlib import Path
 
 st.set_page_config(page_title="Carte des restaurants à proximité", layout="wide")
 st.sidebar.caption("Sélectionnez une page")
@@ -35,7 +36,8 @@ def API_adresse(adresse_postale):
         return None, None
     return float(r[0]["lat"]), float(r[0]["lon"])
 
-df = pd.read_csv("P3_ML3v6.csv")
+BASE_DIR = Path(__file__).resolve().parents[1]  # remonte de pages/ -> projet/
+df = pd.read_csv(BASE_DIR / "P3_ML3v6.csv")
 
 with st.form("search_form"):
  address = st.text_input("Entrez une adresse : ")
