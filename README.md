@@ -1,4 +1,9 @@
-# 🍝 Projet Prédiction de note restaurant
+# 🍝 Projet - Prédiction de note restaurant
+
+## 🌐 Accès au site
+
+Le site web développé dans le cadre du projet est accessible à l’adresse suivante :  
+👉 https://recommendation-restaurant.streamlit.app/
 
 ## 📌 Contexte
 
@@ -27,6 +32,7 @@ Cela permet :
 
 - Une API météo pour analyser si la présence d’une terrasse peut avoir un impact positif sur la note du restaurant
 - Une API permettant d’estimer le revenu médian selon les États, étant donné que les prédictions concernent des adresses situées aux États-Unis
+- Une API de cartographie pour afficher une carte avec les restaurants situés dans un périmètre proche (zone définie autour d’un point)
 
 J’ai également mis en place un pipeline de données automatisé avec **Apache Airflow**, qui permet de mettre à jour les données quotidiennement (notamment les APIs) afin de garantir des informations toujours actuelles.
 
@@ -36,9 +42,14 @@ J’ai également mis en place un pipeline de données automatisé avec **Apache
 ![dashboard_bi2](images/bi2.png)
 
 ## 🛠️ Outils Utilisés  
-- **Base de données** : Kaggle
-- **Langage** : DAX
-- **Visualisation** : Power BI
+- **Base de données** : Yelp
+- **Langage** : Python
+- **Visualisation** : Power BI, Streamlit
+
+## 🔗 Liens
+- API météo : https://meteostat.net/fr/
+- API salaire médian : https://censusdis.readthedocs.io/en/1.1.3/intro.html
+- API OpenStreetMap : https://www.openstreetmap.fr/
 
 ## ⭐ Projet réalisé par :
 - Mourad B.
