@@ -38,8 +38,9 @@ J’ai également mis en place un pipeline de données automatisé avec **Apache
 
 ## Dashboards KPI
 
-![dashboard_bi1](images/bi1.png)
-![dashboard_bi2](images/bi2.png)
+![dashboard1](images/image1.png)
+-
+![dashboard2](images/image2.png)
 
 ## 🛠️ Outils Utilisés  
 - **Base de données** : Yelp
