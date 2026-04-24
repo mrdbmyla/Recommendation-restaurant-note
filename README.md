@@ -45,7 +45,7 @@ J’ai également mis en place un pipeline de données automatisé avec **Apache
 ## 🛠️ Outils Utilisés  
 - **Base de données** : Yelp
 - **Langage** : Python
-- **Visualisation** : Power BI, Streamlit
+- **Visualisation** : Streamlit
 
 ## 🔗 Liens
 - API météo : https://meteostat.net/fr/
