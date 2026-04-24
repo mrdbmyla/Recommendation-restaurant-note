@@ -36,7 +36,7 @@ Cela permet :
 
 J’ai également mis en place un pipeline de données automatisé avec **Apache Airflow**, qui permet de mettre à jour les données quotidiennement (notamment les APIs) afin de garantir des informations toujours actuelles.
 
-## Dashboards KPI
+## Dashboards
 
 ![dashboard1](images/image1.png)
 -
